@@ -1,6 +1,5 @@
 package guru.springframework.sfgpetclinic.model;
 
-
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
