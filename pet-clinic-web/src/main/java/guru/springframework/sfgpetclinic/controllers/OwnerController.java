@@ -16,6 +16,7 @@ import java.util.List;
 @Controller
 public class OwnerController {
     private static final String VIEWS_OWNER_CREATE_OR_UPDATE_FORM = "owners/createOrUpdateOwnerForm";
+    
     private final OwnerService ownerService;
 
     public OwnerController(OwnerService ownerService) {
@@ -26,12 +27,6 @@ public class OwnerController {
     public void setAllowedFields(WebDataBinder dataBinder) {
         dataBinder.setDisallowedFields("id");
     }
-
-//    @GetMapping({"", "/", "/index", "/index.html"})
-//    public String listOwners(Model model){
-//        model.addAttribute("owners", ownerService.findAll());
-//        return "owners/index";
-//    }
 
     @GetMapping("/find")
     public String findOwners(Model model){
